@@ -21,6 +21,7 @@ jobs:
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           start: npm start
           wait-on: 'http://localhost:4200/public/login' # Waits for above
+          wait-on-timeout: 30000  # 2 phút
           # Records to Cypress Cloud 
           # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
           record: true
